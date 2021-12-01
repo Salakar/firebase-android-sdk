@@ -237,9 +237,7 @@ class LocalDocumentsView {
     recalculateAndSaveOverlays(docs);
   }
 
-  /**
-   * Gets the local view of the next {@code count} documents based on their read time.
-   */
+  /** Gets the local view of the next {@code count} documents based on their read time. */
   ImmutableSortedMap<DocumentKey, Document> getDocuments(
       String collectionGroup, IndexOffset offset, int count) {
     Map<DocumentKey, MutableDocument> docs =

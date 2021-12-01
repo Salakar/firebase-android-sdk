@@ -288,8 +288,7 @@ abstract class RemoteDocumentCacheTestCase {
 
   @Test
   public void testNextDocumentsForLargeCollectionGroup() {
-    int size =
-        999 / SQLiteRemoteDocumentCache.GET_ALL_BINDS_PER_STATEMENT + 1;
+    int size = 999 / SQLiteRemoteDocumentCache.GET_ALL_BINDS_PER_STATEMENT + 1;
     for (int i = 0; i < size; ++i) {
       addTestDocumentAtPath("a/" + i + "/b/doc");
     }
